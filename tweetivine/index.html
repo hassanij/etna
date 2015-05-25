@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Tweetivine</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" />
+	</head>
+	<body>
+<div class="wrapper">
+    <div class="box">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <!-- sidebar -->
+            <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
+                <ul class="nav hidden-xs" id="lg-menu">
+                <center><img src="images/logo_tivine.png" style="width:50%; height:auto;"/><br><br></center> 
+                </ul>   
+            </div>
+            <!-- /sidebar -->
+            <!-- main right col -->
+            <div class="column col-sm-10 col-xs-11" id="main">
+              <img id ="debut" src="images/choose.png"/>
+                <div class="padding" style="height: 100%; width: 100%;">
+                    <div class="full col-sm-9">
+                        <!-- content -->
+                      	<div class="row">
+                         <!-- main col left --> 
+                         <div class="col-sm-5" style="height: 60%;">
+                              <div class="panel panel-default" style="height:500px;">
+                                <div class="panel-heading" style="height:50px;"><img id="image_chaine" style="height:auto; max-height:90%;" src=""/> </div>
+                                <div class="panel-thumbnail"></div>
+                                <div class="panel-body" id="panelchaine" style="height:90%;">
+                                  <img id="image_info" src="" style="width:190px; height:auto;" /> 
+                                  <p class="lead">Nom du programme</p>
+                                  <p class="lead_heure">heure</p>
+                                  <div class="progress">
+                                    <div  id="prog" class="progress-bar" role="progressbar"></div>
+                                  </div>
+                                  <p class="lead_pre">Presentateur</p>
+                                  <p class="lead_desc">Resume</p>
+                                  <p></p>
+                                </div>
+                              </div>
+                          </div>
+                          <!-- main col right -->
+                          <div class="col-sm-7">
+                               <div class="panel panel-default">
+                                 <div class="panel-heading"><img src="images/logo-twit.png" id="twitter"><h4>Test</h4></div>
+                                  <div class="panel-body">
+                                    <div id="words"></div>
+                                  </div>
+                              </div>
+                          <!--</div>-->
+                          <div class="col-sm-6">
+                            <a href="https://twitter.com/tivinetechno">Twitter</a> <small class="text-muted">|</small> 
+                            <a href="https://www.facebook.com/tivipedia">Facebook</a> <small class="text-muted">
+                          </div>
+                    </div><!-- /col-9 -->
+                </div><!--  /padding -->
+            </div>
+            <!-- /main -->
+        </div>
+    </div>
+</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"> </script>
+	</body>
+</html>
