@@ -1,0 +1,13 @@
+.achiev-user-username {
+	font-weight: bold;
+	width:100%;
+}
+
+.achiev-admin-line {
+	clear:both;
+}
+
+.achiev-admin-label {
+	min-width: 200px;
+	width: 25%;
+}
