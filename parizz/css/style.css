@@ -1,0 +1,214 @@
+html, body {
+    witdh: 100%;
+    height: 100%;
+    margin: 0;
+    paddin: 0;
+}
+
+h1 {
+    font-family: Times New Roman,sans-serif;
+    font-size: 75px;
+    color: #666666;
+}
+
+.cd-section {
+  padding: 2em 5%;
+  text-align: center;
+  background-color: #03bb91;
+}
+.cd-section p {
+  margin: 2em 0;
+  line-height: 1.6;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (min-width: 768px) {
+  .cd-section {
+    padding: 4em 10%;
+  }
+  .cd-section p {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-section {
+    padding: 4em 20%;
+  }
+}
+
+.cd-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s 0.3s, opacity 0.3s 0s;
+  -moz-transition: visibility 0s 0.3s, opacity 0.3s 0s;
+  transition: visibility 0s 0.3s, opacity 0.3s 0s;
+}
+
+.cd-modal::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+  background: transparent;
+  background: -webkit-linear-gradient( bottom , #34383c, rgba(52, 56, 60, 0));
+  background: linear-gradient(to top, #34383c, rgba(52, 56, 60, 0));
+}
+.cd-modal .cd-modal-content {
+  height: 100%;
+  width: 100%;
+  padding: 3em 5%;
+  text-align: left;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-modal p {
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 2em 0;
+}
+.modal-is-visible .cd-modal {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0s 0s, opacity 0.3s 0s;
+  -moz-transition: visibility 0s 0s, opacity 0.3s 0s;
+  transition: visibility 0s 0s, opacity 0.3s 0s;
+}
+@media only screen and (min-width: 768px) {
+  .cd-modal .cd-modal-content {
+    padding: 4em 10%;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-modal .cd-modal-content {
+    padding: 6em 20%;
+  }
+  .cd-modal p {
+    font-size: 2rem;
+    line-height: 2;
+  }
+}
+
+.cd-modal-action {
+  position: relative;
+}
+.cd-modal-action .btn, .cd-modal-action .cd-modal-bg {
+  display: inline-block;
+  height: 4em;
+  background-color: #34383c;
+}
+.cd-modal-action .btn {
+  width: 12.5em;
+  padding-top: 1%;
+  border-radius: 5em;
+  color: #ffffff;
+  line-height: 4em;
+  white-space: nowrap;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
+  -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
+  transition: color 0.2s 0.3s, width 0.3s 0s;
+}
+.cd-modal-action .btn.to-circle {
+  width: 4em;
+  color: transparent;
+  -webkit-transition: color 0.2s 0s, width 0.3s 0.2s;
+  -moz-transition: color 0.2s 0s, width 0.3s 0.2s;
+  transition: color 0.2s 0s, width 0.3s 0.2s;
+}
+.cd-modal-action .cd-modal-bg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4em;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateX(-2em);
+  -moz-transform: translateX(-2em);
+  -ms-transform: translateX(-2em);
+  -o-transform: translateX(-2em);
+  transform: translateX(-2em);
+  -webkit-transition: visibility 0s 0.5s;
+  -moz-transition: visibility 0s 0.5s;
+  transition: visibility 0s 0.5s;
+}
+.cd-modal-action .cd-modal-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lead {
+        color: #DDCCEE;
+}
+
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+    min-height:100%;
+    background: url("http://www.wallyear.com/wp-content/uploads/2014/06/wallpaper-of-paris-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #eee;
+    overflow: hidden;
+}
+
+.container-full a {
+    color: #efefef;
+    text-decoration: none;
+}
+
+.col-lg-14 {
+  color: #424242;
+  width: 40%;
+  min-width: 400px;
+  margin: auto;
+  margin-top: 10%;
+  padding-bottom: 2%;
+  border-radius: 14px;
+  background-color: rgba(80, 110, 140, 0.2);
+  }
+
+.input-group {
+    width: 340px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cadre{
+    width: 20%;
+    margin: auto;
+    margin-top: 10%;
+    padding-bottom: 2%;
+    border-style: solid;
+    border-color: black;
+    border-size: 50px;
+}
+
+.v-center {
+    margin-top: 7%;
+}
+
+#modal_btn
+{
+    color: white;
+}
